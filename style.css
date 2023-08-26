@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.1),rgba(0,0,0, 0.1)),url("bg2.avif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    }
+a,li{
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:none;
+    list-style:none;
+}
+button{
+    background:black;
+}
+#nav1{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content:end;
+    padding:5px 20px;
+    background:black;
+    }
+#nav p,h1{
+    cursor:pointer;
+    padding:40px 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    margin:10px 0;
+}
+#nav p{
+    text-align:justify;
+}
+#nav p:hover{
+background:white;
+transition:all 2s;
+}
+#nav2 {
+    display:none;
+    cursor:pointer;
+    background: black;
+    border-radius: 0px 0px 20px 20px;
+    width:100px;
+    padding:20px;
+   } 
+#nav ul li:focus-within #nav2,#nav ul li:hover #nav2{
+    display:block;
+    position:absolute;
+}
+#wd1,#wd2,#wd3,#wd4,#wd5,#wd6{
+    margin:50px;
+    text-align:center;
+    padding:50px 10px;
+    border:1px solid black;
+    background:lightcyan;
+    border-radius:10px;
+}
+#wd p{
+    margin-bottom:10px;
+}
+#wd{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+#wd1:hover,#wd2:hover,#wd3:hover,#wd4:hover,#wd5:hover,#wd6:hover{
+    transition:all 2s;
+    cursor:pointer;
+}
+#about{
+    text-align:justify;
+    font-size:large;
+    font-weight:bold;
+    padding:40px 20px;
+    background:rgba(255, 255, 255, 0.5);
+}
+#star{
+    margin:20px auto;
+    display:block;
+    border:1px solid black;
+}
+#nav3{
+   cursor:pointer;
+   display:none;
+   background: black;
+   border-radius: 0px 0px 20px 20px;
+   width:130px;
+   padding:20px;
+}
+#nav2 li{
+    margin:2px;
+} 
+#nav ul li:focus-within #nav3,#nav ul li:hover #nav3{
+    display:block;
+    position:absolute;
+}
+input{
+    display:none;
+}
+/* For phone */
+@media(max-width:1000px){
+    *{
+        margin:0;
+    }    
+ body{
+   background-image:url("bg2.avif");
+   background-size:cover;
+   background-position:left center;
+}
+#nav1{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    gap:15px;
+}
+ul#nav1{
+background:none;
+}
+#nav ul li:hover #nav2,#nav ul li:hover #nav3{
+    padding:0;
+    position:relative;
+    width:150px;
+    background:none;
+}
+input,input~li,hr{
+    display: none;
+}
+input:checked~li{
+    display:block;
+}
+#nav ul li:hover #nav2 li,#nav ul li:hover #nav3 li{
+margin: 10px    ;
+}
+#nav2 ul li:hover a
+{
+background:white;
+border-radius:2px;
+color:black;
+}
+ul#nav1{
+    background:black;
+}
+label{
+    color:white;   
+}
+}
+/* For phone below 300px screen size */
+@media (max-width:320px)
+{
+img{
+    width:250px;
+}
+}
+

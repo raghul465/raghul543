@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body{
+            background-image:url("bg4.jpg");
+            background-position:center;
+            background-size:cover;
+            background-attachment:fixed;
+            }
+        input{
+            margin-bottom:20px;
+        }
+        #form{
+            font-weight: bolder;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid black;
+            padding:50px;
+            background:rgba(255,254,253,0.1);
+        }
+        #form:hover,#form:focus-within{
+        cursor:pointer; 
+        background:whitesmoke;
+        transition:all 2s;
+        }
+        #form:hover a,#form:focus-within a{
+        color: darkcyan ;
+        transition:all 2s;
+        }
+        button{
+            display:block;
+            margin:auto;
+        }
+        a{
+        text-decoration:none;
+        color:white;
+        }
+        h4{
+            text-align:center;
+            margin:30px;
+        }
+        h5{
+            text-align:center;
+        }
+        @media(max-width:1000px){
+            #form{
+                width:350px;
+                padding:10px;
+            }
+        } 
+        @media(max-width:380px)
+        {
+            #form{
+                width:300px;
+                font-size:small;
+            }
+        }
+        @media(max-width:330px)
+        {
+            #form{
+                width:250px;
+                font-size:8px;
+            }
+        }
+        @media(max-width:300px)
+        {
+            #form{
+                width:250px;
+                font-size:8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="form">
+        <h4>Already have an account? <a href="signin.html">Sign In</a></h4>
+        <label for="name">Username: </label>
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <label for="no">Mobile number: </label>
+        <input type="text" name="no" placeholder="Enter your mobile number"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email"  placeholder="Enter your email"><br>
+        <label for="date" >DOB: </label>
+        <input type="date" name="date"><br>   
+        <label for="pass" >Password: </label>
+        <input type="password" name="pass" placeholder="Enter your password"><br>
+        <label for="pass" >Re-Enter Password: </label>
+        <input type="password" name="pass" placeholder="Enter your password">
+        <h5>Note:Your password must contain a <br> minimum one special character (!,@,&,...) <br>and atleast one uppercase letter</h5>
+        <button>Create Account</button>
+    </div>
+    </form>
+
+</body>
+</html>

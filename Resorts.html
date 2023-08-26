@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resorts</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            min-height:100%;
+            position:relative;
+            cursor:default;
+            color:white;
+            font-weight: bolder;
+            background:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.1)),url("bg5.webp");
+            background-attachment:fixed; 
+            padding-bottom:100px;
+        }
+        input{
+            cursor:pointer;
+            margin:15px;
+        }
+        #nav{
+            background:black;
+            text-align:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            gap:5px;
+        }
+        #img{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;    
+            gap:50px;
+        }
+        #img img{
+            cursor:pointer;
+            background: whitesmoke;
+            padding:10px;
+            border:1px solid black;
+            border-radius:5px;
+        }
+        #p1{
+            padding:10px;
+            text-align:justify;
+            color:black;
+            margin:10px auto;
+        }
+        p:hover{
+            cursor:pointer;
+            transition:all 2s;
+            background:rgb(192, 233, 250);
+        }
+        footer{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content: center;
+            gap:100px;
+            padding:10px;
+            color:black;
+            background:lightcyan; 
+            text-align:center;
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+        @media(max-width:1000px)
+        {
+        body {
+            background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.1)),url("bg5.webp");
+            background-attachment:fixed;
+            background-size:cover;
+        }
+        footer{
+            gap:10px;
+        }
+        }
+        </style>
+</head>
+<body>
+    <div id="nav">
+    <div id="div1"> 
+        <label for="chkin">Check in: </label>
+        <input type="date" name="chkin"></div>
+    <div id="div2">
+        <label for="chkout">Check out: </label>
+        <input type="date" name="chkout">
+    </div>
+    <div id="div3">
+        <label for="adl">Adults: </label>
+        <input type="number" name="adl" placeholder="Enter the count"></div>
+    <div id="div4">  
+        <label for="chl">Childern: </label>
+        <input type="number" name="chl" placeholder="Enter the count"></div>
+    <div id="div5"> 
+        <button>Submit</button>
+    </div>
+    </div>
+
+    <p id="p1">Equipped with all the modern amenities like swimming pools, spas, adventure activities, world-class restaurants, cafes, and bars and whatnot, these resorts are a sure-shot way to beat the heat of Banglore.A huge variety of seafood awaits in the restaurants, and service of sauna and massage awaits you near the pool. Plan a lazy weekend escapade to one of the best Chennai beach resorts.
+        A huge variety of seafood awaits in the restaurants, and service of sauna and massage awaits you near the pool. Plan a lazy weekend escapade to one of the best Banglore resorts.
+    </p>
+    <div id="img">
+        <img src="rs1.jpg" width="300px">
+        <img src="rs2.jpg" width="300px">
+        <img src="rs3.jpg" width="300px">
+        <img src="rs4.jpg" width="300px">
+        <img src="rs5.jpg" width="300px">
+        <img src="rs6.jpg" width="300px">
+        <img src="rs7.avif" width="300px">
+        <img src="rs8.jpg" width="300px">
+        <img src="rs9.webp" width="300px">
+    </div>
+    <footer>
+        <span id="sp1"><i class="fa-solid fa-phone"></i> Contact: +91 9876512340</span >
+        <span id="sp2"><i class="fa-solid fa-envelope"></i> Email: def@gmail.com</span >
+    </footer>
+</body>
+</html>

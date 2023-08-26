@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("bg4.jpg");
+            background-size:cover;
+            background-position:top center;
+            background-attachment: fixed;
+        }
+        #fill{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+        }
+        input{
+            margin:10px;
+        }
+        label{
+            font-weight:bold;
+        }  
+        @media(max-width:1000px){
+            body{
+                background-image:url("bg4.jpg");
+                background-size:contain;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <form>
+        <div id="fill">
+        <label for="name">Username: </label>
+        <input type="text" name="name" placeholder="abc"><br>
+        <label for="Pass">Password: </label>
+        <input type="password" name="pass">
+        </div>
+    </form>  
+</body>
+</html>

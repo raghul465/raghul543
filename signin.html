@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-image: url("bg4.jpg");
+            background-size:cover;
+            background-attachment:fixed;
+            background-position:center;
+            cursor:default;
+        }
+        #fill{
+            font-weight:bolder;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+            border:1px solid black;
+            padding:25px;
+            background:rgba(255,254,253,0.1);
+        }
+        #fill:hover,#fill:focus-within{
+            cursor:pointer; 
+            background:whitesmoke;
+            transition:all 2s;
+        }
+        #fill:hover h4 a,#fill:focus-within h4 a{
+            color: darkcyan ;
+            transition:all 2s;
+        }
+        input{
+            margin:10px 10px 30px;
+            border:none;
+            border-radius:5px;
+            text-align:center;
+        }
+        label{
+            font-size:large;
+            display:block;
+        }
+        h4 a{
+            color:white;
+            text-decoration:none;
+        }
+        #a1{
+            text-decoration:none;
+            color:black;
+        }
+        h4{
+            margin-bottom:30px;
+        }
+        button{
+            cursor:pointer;
+        }
+        @media(max-width:1000px){
+            #fill{
+                font-size:15px;
+                width:300px;
+            }
+        }
+        @media (max-width:360px)
+        {
+            #fill{
+                font-size:15px;
+                width:250px;
+                padding:20px;
+            }
+        }
+        @media (max-width:300px)
+        {
+            #fill{
+                font-size:15px;
+                width:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="fill">
+        <h4>If you don't have an account? <a href="signup.html">Sign up</a></h4>
+        <label for="name">Username </label>
+        <input type="text" name="name" id="name" placeholder="Enter your Username"><br>
+        <label for="Pass">Password </label>
+        <input type="password" name="pass"  placeholder="Enter your password"><br>
+        <button>Continue</button><br><br>
+        <a id="a1" href="#">Forgot username or password? </a>
+    </div>
+</form>
+</body>
+</html>
