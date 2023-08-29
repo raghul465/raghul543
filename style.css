@@ -47,7 +47,11 @@ transition:all 2s;
     width:100px;
     padding:20px;
    } 
-#nav ul li:hover #nav2{
+/* #nav ul li:focus-within #nav2,#nav ul li:hover #nav2{
+    display:block;
+    position:absolute;
+} */
+#nav ul li input:checked~#nav2{
     display:block;
     position:absolute;
 }
@@ -95,12 +99,16 @@ transition:all 2s;
 #nav2 li{
     margin:2px;
 } 
-#nav ul li:hover #nav3{
+#nav ul li input:checked~#nav3{
     display:block;
     position:absolute;
 }
 input{
     display:none;
+}
+label{
+user-select: none;
+cursor:pointer;
 }
 /* For phone */
 @media(max-width:1000px){
@@ -121,7 +129,7 @@ input{
 ul#nav1{
 background:none;
 }
-#nav ul li:hover #nav2,#nav ul li:hover #nav3{
+#nav ul li input:checked~ #nav2,#nav ul li input:checked~#nav3{
     padding:0;
     position:relative;
     width:150px;
@@ -133,7 +141,7 @@ input,input~li,hr{
 input:checked~li{
     display:block;
 }
-#nav ul li:hover #nav2 li,#nav ul li:hover #nav3 li{
+#nav ul li input:checked~#nav2 li,#nav ul li input:checked~#nav3 li{
 margin: 10px    ;
 }
 #nav2 ul li:hover a
